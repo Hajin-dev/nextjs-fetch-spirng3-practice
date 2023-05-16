@@ -44,7 +44,7 @@ public class DBLoader  {
         InfoEntity currentInfo = this.infoRepository.findById(id).orElseThrow(RuntimeException::new);
         currentInfo.setEmail(info.getEmail());
         currentInfo.setName(info.getName());
-        currentInfo = this.infoRepository.save(info);
+        currentInfo = this.infoRepository.save(currentInfo);
         return ResponseEntity.ok(currentInfo);
     }
     @DeleteMapping("/{id}")
