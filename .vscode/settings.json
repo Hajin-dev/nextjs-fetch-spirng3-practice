@@ -1,0 +1,11 @@
+{
+  "java.compile.nullAnalysis.mode": "disabled",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "eslint.nodePath": ".yarn/sdks",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
